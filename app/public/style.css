@@ -1,0 +1,19 @@
+body {
+    background-image: url("concrete.jpg");
+    text-align: center;
+    font-family: 'Slabo 27px', serif;
+};
+
+.jumbotron {
+    text-align: center;
+};
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+  };
