@@ -1,7 +1,11 @@
+* {
+   font-family: 'Slabo 27px', serif !important; 
+}
+
 body {
     background-image: url("concrete.jpg");
     text-align: center;
-    font-family: 'Slabo 27px', serif;
+    
 };
 
 .jumbotron {
