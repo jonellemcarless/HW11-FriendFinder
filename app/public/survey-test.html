@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <title>Survey</title>
+ <!-- Bootstrap -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous">
+ <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+ <!-- CSS -->
+ <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+ <nav class="navbar navbar-dark bg-primary navbar-fixed-top">
+  <div class="container">
+   <div class="btn-group" role="group" aria-label="...">
+    <a class="btn btn-default" href="/" role="button">Home</a>
+    <a class="btn btn-default" href="/api/friends" role="button">API Friends List</a>
+    <a class="btn btn-default" href="https://github.com/jonellemcarless/HW11-FriendFinder" role="button">GitHub Repo</a>
+   </div>
+  </div>
+ </nav>
+
+ <div class="container-fluid">
+  <div class="row">
+   <div class="col-md-2"></div>
+
+  <!-- </div> -->
+  <div class="col-md-8">
+
+   <h2>Survey Questions</h2>
+
+   <h3>Name</h3>
+   <input id="name" type="text" class="form-control" placeholder="Text input">
+
+   <h3>Image Link</h3>
+   <input id="imgLink" type="text" class="form-control" placeholder="Text input">
+  </div>
+  <br>
+
+  <div class="col-md-10">
+
+   <div class="row">
+    <div class="col-md-8">
+     <h5>You enjoy keeping up with and discussing politics</h5>
+     <select class="form-control" id="q1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+     </select>
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-md-8">
+     <h5>You consider yourself a huge sports fan</h5>
+     <select class="form-control" id="q2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+     </select>
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-md-8">
+     <h5>On a typical weekend you most likely will be found out at a bar</h5>
+     <select class="form-control" id="q3">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+     </select>
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-md-8">
+     <h5>You drive the speed limit most of the time</h5>
+     <select class="form-control" id="q4">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+     </select>
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-md-8">
+     <h5>For vacation, you would rather go on a safari than a tropical cruise</h5>
+     <select class="form-control" id="q5">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+     </select>
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-md-8">
+     <h5>You despise the Kardashians</h5>
+     <select class="form-control" id="q6">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+     </select>
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-md-8">
+     <h5>The thought of an early morning run excites you</h5>
+     <select class="form-control" id="q7">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+     </select>
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-md-8">
+     <h5>Video Games!!</h5>
+     <select class="form-control" id="q8">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+     </select>
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-md-8">
+     <h5>Your zombie apocalypse plan is set!</h5>
+     <select class="form-control" id="q9">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+     </select>
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-md-8">
+     <h5>Michael Jackson > Prince </h5>
+     <select class="form-control" id="q10">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+     </select>
+    </div>
+   </div>
+   <br>
+   <!-- btn btn-success -->
+   <button type="button" class="submit" data-toggle="modal" data-target="#myModal">Submit</button>
+
+  </div>
+ </div>
+ <div class="col-md-2"></div>
+
+ <div class="row">
+  <div class="col-md-12">
+   <div class="panel panel-default">
+    <div class="panel-body footer">
+     2019 &copy; Jonelle Carless
+    </div>
+   </div>
+  </div>
+ </div>
+
+ <!-- Modal -->
+ <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+   <!-- Modal content-->
+   <div class="modal-content">
+    <div class="modal-header">
+     <h4 id="matchName" class="modal-title">Best Match</h4>
+     <button type="button" class="close" data-dismiss="modal">&times;</button>
+         </div>
+    <div class="modal-body">
+      <img id="matchPhoto" alt="">
+     <!-- <p>Picture</p> -->
+    </div>
+    <div class="modal-footer">
+     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+   </div>
+
+  </div>
+ </div>
+
+ <!-- Bootstrap / jQuery -->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"></script>
+
+ <script type="text/javascript">
+  var userData = "";
+  var dif = 100;
+  var leastDifference = 100;
+  var bestMatch = {};
+  $('.submit').on('click', function () {
+   userData = {
+    name: $('#name').val().trim(),
+    photo: $('#imgLink').val().trim(),
+    answers: [$('#q1').val(), $('#q2').val(), $('#q3').val(), $('#q4').val(), $('#q5').val(), $('#q6').val(), $(
+     '#q7').val(), $('#q8').val(), $('#q9').val(), $('#q10').val()]
+   };
+   var currentURL = window.location.origin;
+   $.post(currentURL + "/api/survey", userData,
+    function (data) {});
+   var queryURL = "/api/survey";
+   $.ajax({
+     url: queryURL,
+     method: 'GET'
+    })
+    .done(function (response) {
+     for (var f = 0; f < response.length; f++) {
+      dif = 100;
+      for (var i = 0; i <= 9; i++) {
+       var num = i + 1;
+       var num2 = "'" + num + "'";
+       dif -= (Math.abs(parseInt(userData.answers[i]) - parseInt(response[f].answer + (i + 1))));
+       console.log(('response[f].answer' + num));
+       // console.log(num);
+       if (dif < leastDifference) {
+        leastDifference = dif;
+        bestMatch = {
+         name: response[f].name,
+         photo: response[f].photo
+        };
+        // console.log(bestMatch);
+       }
+      }
+      // console.log(leastDifference);
+      // console.log(bestMatch);
+     };
+     $('#matchName').html(bestMatch.name);
+     var image = $("<img>").attr("src", bestMatch.photo);
+     $('#matchPhoto').html(image);
+     console.log(bestMatch.name + " " + bestMatch.photo);
+    }) //.done
+  }); //submit
+ </script>
+
+
+</body>
+
+
+
+
+</html>
