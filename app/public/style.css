@@ -1,10 +1,13 @@
 * {
    font-family: 'Slabo 27px', serif !important; 
+   text-align: center !important;
 }
-
+.row {
+    text-align: center !important;
+}
 body {
     background-image: url("concrete.jpg");
-    text-align: center;
+    
     
 };
 

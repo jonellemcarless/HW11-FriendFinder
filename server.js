@@ -1,16 +1,18 @@
+// Dependencies
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
 
-
+// Setting up express app
 var app = express();
-var PORT = process.env.PORT || 3333; 
+var PORT = process.env.PORT || 3306; 
 
 
 var staticContentFolder = __dirname + '/app/public';
 console.log(staticContentFolder);
 app.use(express.static(staticContentFolder)); 
 
+// Data parsing
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.text());
