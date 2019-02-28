@@ -48,27 +48,3 @@ app.post('/api/friends', function(req, res){
 		return diff;
 	}
 };
-
-
-// var routeName = newFriend.name.replace(/\s+/g, '').toLowerCase();
-
-
-
-	// friend.create({
-	// 	routeName: routeName,
-	// 	name: newFriend.name,
-	// 	photo: newFriend.photo,
-	// 	answer1: newFriend.answers[0],
-	// 	answer2: newFriend.answers[1],
-	// 	answer3: newFriend.answers[2],
-	// 	answer4: newFriend.answers[3],
-	// 	answer5: newFriend.answers[4],
-	// 	answer6: newFriend.answers[5],
-	// 	answer7: newFriend.answers[6],
-	// 	answer8: newFriend.answers[7],
-	// 	answer9: newFriend.answers[8],
-	// 	answer10: newFriend.answers[9]
-	// });
-
-
-	// allFriends.push(newFriend);
